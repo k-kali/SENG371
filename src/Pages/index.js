@@ -1,19 +1,13 @@
+import { CurrentBookings } from "./CurrentBookings"
+import { FindBookings } from "./FindBookings"
+import { Home } from './Home'
+import { ManageBookings } from "./ManageBookings"
+import { ManageDatabase } from "./ManageDatabase"
 
-import React from 'react';
-  
-const Home = () => {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Welcome to Club Bookings System</h1>
-    </div>
-  );
-};
-  
-export default Home;
+export {
+    CurrentBookings,
+    FindBookings,
+    Home,
+    ManageBookings,
+    ManageDatabase,
+}

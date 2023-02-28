@@ -1,6 +1,7 @@
 import React from "react";
 
 export function FindBookings() {
-  return <h1>Find Bookings</h1>;
+  return (
+    <h1>Find Bookings</h1>
+  )
 }
-export default FindBookings;

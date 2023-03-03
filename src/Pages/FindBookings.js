@@ -13,9 +13,11 @@ export function FindBookings() {
 
   return (
     <div>
-      <h1>Find Bookings</h1>
-      <h2>Filter</h2>
-      <text>filters here</text>
+      <h1>Search for Bookings</h1>
+      <input className="form-control" type="text" placeholder="search" />
+      <br></br>
+      <h4>Filter by keyword:</h4>
+      <input className="form-control" type="text" />
       <div>
         <ResultsTable data={ResultsData} column={column} />
       </div>

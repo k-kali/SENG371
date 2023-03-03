@@ -1,0 +1,26 @@
+[ 
+    {
+        "id": "100",
+        "type": "classroom",
+        "roomNum": "ECS 115",
+        "date": "Feb 24",
+        "day": "Thursday",
+        "time": "5:00 - 7:00"
+    },
+    {
+        "id": "101",
+        "type": "classroom",
+        "roomNum": "ECS 220",
+        "date": "Feb 24",
+        "day": "Thursday",
+        "time": "4:00 - 9:00"
+    },
+    {
+        "id": "102",
+        "type": "speakers",
+        "roomNum": "",
+        "date": "Feb 6",
+        "day": "Thursday",
+        "time": "6:00 - 3:00"
+    }
+]

@@ -50,6 +50,7 @@ jobs:
           tags: fortnitefrank/seng371:latest
   notify:
     needs: build
+    runs-on: ubuntu-latest
     steps: 
       - 
         name: sending webhook

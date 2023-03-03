@@ -20,6 +20,7 @@ jobs:
       - 
         name: Run tests
         run: |
+          npm install --silent
           npm test
 
   build:

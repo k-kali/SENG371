@@ -48,3 +48,10 @@ jobs:
           context: .
           push: true
           tags: fortnitefrank/seng371:latest
+  notify:
+    needs: build
+    steps: 
+      - 
+      name: sending webhook
+      run: |
+        echo "Webhook sent"

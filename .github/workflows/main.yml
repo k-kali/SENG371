@@ -31,10 +31,10 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       -
-        name: set up qemu
+        name: Install Docker
         uses: docker/setup-qemu-action@v2
       -
-        name: set up buildx
+        name: Configure Docker Build
         uses: docker/setup-buildx-action@v2
       -
         name: Login to Docker Hub
@@ -43,7 +43,7 @@ jobs:
           username: fortnitefrank
           password: dckr_pat_PFWWNLZrPto3g5J6FoRF_3Tpr9Q
       -
-        name: Build and push
+        name: Build and Push Docker container
         uses: docker/build-push-action@v4
         with:
           context: .

@@ -1,5 +1,6 @@
 import React from "react";
 import "./resultstable.css";
+import { Button } from "react-bootstrap";
 
 //taken from https://github.com/candraKriswinarto/dynamic-table
 
@@ -7,11 +8,11 @@ import "./resultstable.css";
 
 const ResultsTable = ({ data, column }) => {
   return (
-    <table>
+    <table data-testid="results-table">
       <thead>
         <tr>
           {column.map((item, index) => (
-            <TableHeadItem item={item} />
+            <TableHeadItem item={item} data-testid="list-header"/>
           ))}
         </tr>
       </thead>
@@ -35,9 +36,16 @@ const TableRow = ({ item, column }) => (
       }
       return <td>{item[`${columnItem.value}`]}</td>;
     })}
-      <td><button>book</button></td>
+    <td>
+      <Button
+        className="primary"
+        onClick={() => {
+          console.log("booked", {item})
+        }}
+        data-testid={item.id}
+      >Book</Button>
+    </td>
   </tr>
-
 );
 
 export default ResultsTable;

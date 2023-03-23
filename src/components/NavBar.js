@@ -32,7 +32,7 @@ export function NavBar() {
                     </Nav.Link>
 
                 </Nav>
-                <Button>Log Out</Button>
+                <Button to={'/'} as={NavLink}>Logout</Button>
             </Container>
         </NavbarBs>
     )

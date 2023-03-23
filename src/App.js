@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout'
-import { AdminHome, AdminEquipment, AdminRooms, AdminBookings, UserHome, UserBookings, UserEquipment, UserRooms } from './Pages';
+import { AdminHome, AdminEquipment, AdminRooms, AdminBookings, UserHome, UserBookings, UserEquipment, UserRooms, Login, Home } from './Pages';
 
 function App() {
 
@@ -8,6 +8,9 @@ function App() {
   return (
     <>
         <Routes>
+          <Route path='/*' element={<Home/>}/>
+          <Route path='user' element={<Login/>}/>
+          <Route path='admin' element={<Login/>}/>
           <Route path='user/*' element={<Layout/>}>
             <Route path='home'  element={<UserHome/>} />
             <Route path='bookings'  element={<UserBookings/>} />

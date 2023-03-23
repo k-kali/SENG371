@@ -8,6 +8,9 @@ import { AdminRooms } from "./Admin/Rooms"
 import { AdminHome } from './Admin/Home'
 import { AdminBookings } from './Admin/Bookings'
 
+import { Home } from "./Shared/Home"
+import { Login } from "./Shared/Login"
+
 
 
 export {
@@ -19,4 +22,6 @@ export {
     AdminRooms,
     AdminHome,
     AdminBookings,
+    Home,
+    Login,
 }

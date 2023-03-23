@@ -47,7 +47,7 @@ export function AdminRooms(){
   return (
     <>    
       <Container className='d-flex justify-content-center'>
-        <h1>Manage Equipment Table</h1>
+        <h1>Manage Rooms</h1>
       </Container>
       <Container className='d-flex justify-context-center'>
         <AddRooms onAddRow={handleAddRow}/>

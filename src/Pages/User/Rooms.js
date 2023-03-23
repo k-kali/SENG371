@@ -39,7 +39,7 @@ export function UserRooms(){
   return (
     <>    
       <Container className='d-flex justify-content-center'>
-        <h1>Manage Equipment Table</h1>
+        <h1>Manage Rooms Table</h1>
       </Container>
       <Container className='d-flex justify-content-center'>
         <Table columns={columns} data={tableData} handleDelete={handleDelete} buttonVariant='primary' buttonText='Book Room' ></Table>

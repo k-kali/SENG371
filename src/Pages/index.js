@@ -1,13 +1,27 @@
-import { CurrentBookings } from "./CurrentBookings"
-import { FindBookings } from "./FindBookings"
-import { Home } from './Home'
-import { ManageBookings } from "./ManageBookings"
-import { ManageDatabase } from "./ManageDatabase"
+import { UserEquipment } from "./User/Equipment" 
+import { UserRooms } from "./User/Rooms"
+import { UserHome } from './User/Home'
+import { UserBookings } from './User/Bookings'
+
+import { AdminEquipment } from "./Admin/Equipment"
+import { AdminRooms } from "./Admin/Rooms"
+import { AdminHome } from './Admin/Home'
+import { AdminBookings } from './Admin/Bookings'
+
+import { Home } from "./Shared/Home"
+import { Login } from "./Shared/Login"
+
+
 
 export {
-    CurrentBookings,
-    FindBookings,
+    UserEquipment,
+    UserRooms,
+    UserHome,
+    AdminEquipment,
+    UserBookings,
+    AdminRooms,
+    AdminHome,
+    AdminBookings,
     Home,
-    ManageBookings,
-    ManageDatabase,
+    Login,
 }

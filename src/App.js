@@ -1,21 +1,29 @@
-import { Container } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
-import { NavBar } from './components/NavBar'
-import { Home, FindBookings, CurrentBookings, ManageBookings, ManageDatabase } from './Pages'
+import { Layout } from './components/Layout'
+import { AdminHome, AdminEquipment, AdminRooms, AdminBookings, UserHome, UserBookings, UserEquipment, UserRooms, Login, Home } from './Pages';
 
 function App() {
+
+
   return (
     <>
-      <NavBar/>
-      <Container className="mb-4">
         <Routes>
-          <Route path='/'  element={<Home/>} />
-          <Route path='/FindBookings'  element={<FindBookings/>} />
-          <Route path='/ManageBookings' element={<ManageBookings/>} />
-          <Route path='/CurrentBookings' element={<CurrentBookings/>} />
-          <Route path='/ManageDatabase' element={<ManageDatabase/>} />
+          <Route path='/*' element={<Home/>}/>
+          <Route path='user' element={<Login/>}/>
+          <Route path='admin' element={<Login/>}/>
+          <Route path='user/*' element={<Layout/>}>
+            <Route path='home'  element={<UserHome/>} />
+            <Route path='bookings'  element={<UserBookings/>} />
+            <Route path='equipment' element={<UserEquipment/>} />
+            <Route path='rooms' element={<UserRooms/>}/>
+          </Route>
+          <Route path='admin/*' element={<Layout/>}>
+            <Route path='home' element={<AdminHome/>} />
+            <Route path='equipment' element={<AdminEquipment/>} />
+            <Route path='rooms' element={<AdminRooms/>} />
+            <Route path='bookings' element={<AdminBookings/>} />
+          </Route>
         </Routes>
-      </Container>
     </>
   );
 }

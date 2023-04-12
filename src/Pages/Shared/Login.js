@@ -18,7 +18,7 @@ export function Login(){
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
-                  <Button to={'home'} as={NavLink} style={{'marginRight': '10px'}}>Login</Button>
+                  <Button to={'bookings'} as={NavLink} style={{'marginRight': '10px'}}>Login</Button>
                 </Form>
             </Container>
         </>

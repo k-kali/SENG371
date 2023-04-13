@@ -6,12 +6,6 @@ export function NavBar() {
     <NavbarBs className="bg-primary shadow-lg mb-3">
       <Container>
         <Nav>
-          <Nav.Link to={"home"} as={NavLink}>
-            <Container className="px-4 ">
-              <h4 className="text-light">Home</h4>
-            </Container>
-          </Nav.Link>
-
           <Nav.Link to={"equipment"} as={NavLink}>
             <Container className="px-4">
               <h4 className="text-light">Equipment</h4>
